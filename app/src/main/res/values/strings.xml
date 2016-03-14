@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Papers</string>
+    <string name="nycID">NYC ID</string>
+    <string name="nySID">NY State ID</string>
+    <string name="ssncard">Social Security Card</string>
+    <string name="birthcert">Birth Certificate</string>
+    <string name="uspasspt">U.S. Passport</string>
+</resources>

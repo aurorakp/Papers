@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.android.papers.MainActivity">
+    <TextView
+        android:id="@+id/apptitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Papers"
+        android:textColor="@android:color/black"
+        android:textSize="80dp"
+        android:layout_marginTop="32dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="32dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical"
+        android:layout_below="@id/apptitle">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+            <ImageView
+                android:id="@+id/idnycbutton"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                style="@style/MainScreenButton"
+                android:src="@drawable/idnyctrans"
+                android:background="@drawable/roundbutton"
+                android:scaleType="fitXY">
+            </ImageView>
+
+            </RelativeLayout>
+
+            <!--<Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/nycID"
+                android:background="@drawable/roundbutton"
+                style="@style/ButtonText"
+                android:textColor="#FFFF00" />-->
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+            <ImageButton
+
+                android:layout_width="140dp"
+                android:layout_height="100dp"
+                android:src="@drawable/nystateidjpeg"
+                android:background="@drawable/roundcornerimages"
+                android:scaleType="fitXY"
+                android:padding="5dp"
+                />
+            <!--<Button
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="@string/nySID"
+                android:layout_gravity="left"
+                android:layout_marginRight="32dp"
+                style="@style/ButtonText"
+
+                android:background="@drawable/roundbutton"
+                />
+-->         <ImageButton
+
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/ssnlogonotranspng"
+            android:background="@drawable/roundcornerimages"
+            android:scaleType="centerCrop"
+            />
+            <!--<Button
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="32dp"
+                android:layout_marginBottom="16dp"
+                android:text="@string/ssncard"
+                style="@style/ButtonText"
+                android:background="@drawable/roundbutton"
+                />-->
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+            <ImageButton
+
+                android:layout_width="120dp"
+                android:layout_height="100dp"
+                android:src="@drawable/birthcert"
+                android:background="@drawable/roundcornerimages"
+                android:scaleType="centerCrop"
+                android:padding="5dp"
+                />
+            <!--<Button
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="@string/birthcert"
+                android:layout_gravity="left"
+                android:layout_marginRight="14dp"
+                android:layout_marginEnd="14dp"
+                style="@style/ButtonText"
+                android:background="@drawable/roundbutton"
+                />-->
+            <ImageButton
+
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/uspassportcover"
+                android:background="@drawable/roundcornerimages"
+                android:scaleType="centerCrop"
+                android:padding="5dp"
+                />
+            <!--<Button
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginStart="14dp"
+                android:layout_marginLeft="14dp"
+                android:text="@string/uspasspt"
+                style="@style/ButtonText"
+                android:background="@drawable/roundbutton"/>
+-->
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
