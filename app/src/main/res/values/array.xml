@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="ssn_resource_name_array">
+        <item>Get or Replace Social Security Card</item>
+        <item>Documents Needed</item>
+        <item>Social Security Office Locator</item>
+    </string-array>
+    <string-array name="ssn_resource_link_array">
+        <item>https://www.ssa.gov/ssnumber/</item>
+        <item>https://www.ssa.gov/ssnumber/ss5doc.htm </item>
+        <item>https://secure.ssa.gov/ICON/</item>
+    </string-array>
+    <string-array name="idnyc_names">
+        <item>What You Need</item>
+        <item>Application</item>
+        <item>Make An Appointment</item>
+    </string-array>
+    <string-array name="idnyc_links">
+        <item>http://www1.nyc.gov/site/idnyc/card/documentation.page</item>
+        <item>http://www1.nyc.gov/site/idnyc/card/application-materials.page</item>
+        <item>https://idnyc.appointment-plus.com/</item>
+    </string-array>
+    <string-array name="dmv_names">
+        <item>State ID (Non-Driver)</item>
+        <item>Driver\'s License</item>
+    </string-array>
+    <string-array name="dmv_links">
+        <item>http://dmv.ny.gov/id-card/bget-non-driver-id-card-ndid  </item>
+        <item>http://dmv.ny.gov/driver-license/get-driver-license</item>
+    </string-array>
+    <string-array name="birthcert_names">
+        <item>New York City Births</item>
+        <item>New York State (Not in NYC) Births</item>
+    </string-array>
+    <string-array name="birthcert_links">
+        <item>http://www1.nyc.gov/site/doh/services/birth-certificates.page</item>
+        <item>https://www.health.ny.gov/vital_records/birth.htm</item>
+    </string-array>
+</resources>

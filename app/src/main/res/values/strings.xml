@@ -5,4 +5,17 @@
     <string name="ssncard">Social Security Card</string>
     <string name="birthcert">Birth Certificate</string>
     <string name="uspasspt">U.S. Passport</string>
+    <string name="title_activity_ssn_">SSN_Activity</string>
+    <string name="title_activity_idNYC_">idNYC_Activity</string>
+
+    <!--  <string-array name="ssn_resource_name_array">
+        <item>Get or Replace Social Security Card</item>
+        <item>Documents Needed</item>
+        <item>Social Security Office Locator</item>
+    </string-array>
+    <string-array name="ssn_resource_link_array">
+        <item>https://www.ssa.gov/ssnumber/</item>
+        <item>https://www.ssa.gov/ssnumber/ss5doc.htm </item>
+        <item>https://secure.ssa.gov/ICON/</item>
+    </string-array>-->
 </resources>

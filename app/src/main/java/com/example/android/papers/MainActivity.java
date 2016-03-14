@@ -1,13 +1,9 @@
 package com.example.android.papers;
 
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
-import android.support.v4.graphics.drawable.RoundedBitmapDrawable;
-import android.support.v4.graphics.drawable.RoundedBitmapDrawableFactory;
-import android.support.v7.app.AppCompatActivity;
+import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import android.widget.ImageView;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -16,6 +12,22 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_main);
+    }
+
+    /**
+     * Called when the user clicks the SSN button
+     */
+    public void goToSSN(View view) {
+        Intent intent = new Intent(this, SSN_Activity.class);
+        startActivity(intent);
+    }
+
+    /**
+     * Called when the user clicks the idNYC button
+     */
+    public void goToIdNyc(View view) {
+        Intent intent = new Intent(this, idNYC_Activity.class);
+        startActivity(intent);
     }
 
 //    public void scaleBitmaps(View view) {

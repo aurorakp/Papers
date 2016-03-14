@@ -37,7 +37,8 @@
                 style="@style/MainScreenButton"
                 android:src="@drawable/idnyctrans"
                 android:background="@drawable/roundbutton"
-                android:scaleType="fitXY">
+                android:scaleType="fitXY"
+                android:onClick="goToIdNyc">
             </ImageView>
 
             </RelativeLayout>
@@ -82,6 +83,7 @@
             android:src="@drawable/ssnlogonotranspng"
             android:background="@drawable/roundcornerimages"
             android:scaleType="centerCrop"
+            android:onClick="goToSSN"
             />
             <!--<Button
                 android:layout_width="120dp"
