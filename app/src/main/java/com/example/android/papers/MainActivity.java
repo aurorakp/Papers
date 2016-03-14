@@ -30,6 +30,21 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void goToBirthCert(View view) {
+        Intent intent = new Intent(this, BirthCert_Activity.class);
+        startActivity(intent);
+    }
+
+    public void goToDMV(View view) {
+        Intent intent = new Intent(this, DMV_Activity.class);
+        startActivity(intent);
+    }
+
+    public void goToPassport(View view) {
+        Intent intent = new Intent(this, Passport_Activity.class);
+        startActivity(intent);
+    }
+
 //    public void scaleBitmaps(View view) {
 //        Bitmap idNycBitmap = BitmapFactory.decodeResource(getResources(), R.drawable.idnyclogo);
 //

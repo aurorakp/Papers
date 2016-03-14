@@ -28,12 +28,22 @@
         <item>http://dmv.ny.gov/id-card/bget-non-driver-id-card-ndid  </item>
         <item>http://dmv.ny.gov/driver-license/get-driver-license</item>
     </string-array>
-    <string-array name="birthcert_names">
+    <string-array name="birth_cert_names">
         <item>New York City Births</item>
         <item>New York State (Not in NYC) Births</item>
     </string-array>
-    <string-array name="birthcert_links">
+    <string-array name="birth_cert_links">
         <item>http://www1.nyc.gov/site/doh/services/birth-certificates.page</item>
         <item>https://www.health.ny.gov/vital_records/birth.htm</item>
+    </string-array>
+    <string-array name="passport_names">
+        <item>How To Apply</item>
+        <item>Where To Apply</item>
+        <item>Contact U.S. Passport Information Center</item>
+    </string-array>
+    <string-array name="passport_links">
+        <item>https://travel.state.gov/content/passports/en/passports/apply.html</item>
+        <item>https://travel.state.gov/content/passports/en/passports/information/where-to-apply.html</item>
+        <item>https://travel.state.gov/content/passports/en/contact-us.html</item>
     </string-array>
 </resources>
