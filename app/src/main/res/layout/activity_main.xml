@@ -65,6 +65,7 @@
                 android:background="@drawable/roundcornerimages"
                 android:scaleType="fitXY"
                 android:padding="5dp"
+                android:onClick="goToDMV"
                 />
             <!--<Button
                 android:layout_width="120dp"
@@ -109,6 +110,7 @@
                 android:background="@drawable/roundcornerimages"
                 android:scaleType="centerCrop"
                 android:padding="5dp"
+                android:onClick="goToBirthCert"
                 />
             <!--<Button
                 android:layout_width="120dp"
@@ -128,6 +130,7 @@
                 android:background="@drawable/roundcornerimages"
                 android:scaleType="centerCrop"
                 android:padding="5dp"
+                android:onClick="goToPassport"
                 />
             <!--<Button
                 android:layout_width="120dp"

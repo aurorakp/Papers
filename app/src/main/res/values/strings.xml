@@ -7,6 +7,7 @@
     <string name="uspasspt">U.S. Passport</string>
     <string name="title_activity_ssn_">SSN_Activity</string>
     <string name="title_activity_idNYC_">idNYC_Activity</string>
+    <string name="title_activity_passport_">Passport_Activity</string>
 
     <!--  <string-array name="ssn_resource_name_array">
         <item>Get or Replace Social Security Card</item>
