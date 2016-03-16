@@ -9,11 +9,11 @@
         android:id="@+id/dmv_pageheaderimg"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/dmv_banner"
+        android:src="@drawable/nysdmv"
         android:layout_alignParentTop="true" />
 
     <ListView
-        android:id="@+id/birth_cert_list"
+        android:id="@+id/dmv_list"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/dmv_pageheaderimg"

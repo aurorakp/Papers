@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void goToBirthCert(View view) {
-        Intent intent = new Intent(this, BirthCert_Activity.class);
+        Intent intent = new Intent(this, Birth_Cert_Activity.class);
         startActivity(intent);
     }
 

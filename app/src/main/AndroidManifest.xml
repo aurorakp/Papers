@@ -34,8 +34,8 @@
                 android:value="com.example.android.papers.MainActivity" />
         </activity>
         <activity
-            android:name=".BirthCert_Activity"
-            android:label="BirthCert_Activity"
+            android:name=".Birth_Cert_Activity"
+            android:label="@string/title_activity_birth_cert"
             android:parentActivityName=".MainActivity"
             android:theme="@style/AppTheme">
             <meta-data
@@ -44,7 +44,7 @@
         </activity>
         <activity
             android:name=".DMV_Activity"
-            android:label="DMV_Activity"
+            android:label="@string/title_activity_DMV_"
             android:parentActivityName=".MainActivity"
             android:theme="@style/AppTheme">
             <meta-data
@@ -54,7 +54,13 @@
         <activity
             android:name=".Passport_Activity"
             android:label="@string/title_activity_passport_"
-            android:theme="@style/AppTheme"></activity>
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.android.papers.MainActivity" />
+
+        </activity>
     </application>
 
 </manifest>

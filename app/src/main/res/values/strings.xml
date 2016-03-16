@@ -8,6 +8,8 @@
     <string name="title_activity_ssn_">SSN_Activity</string>
     <string name="title_activity_idNYC_">idNYC_Activity</string>
     <string name="title_activity_passport_">Passport_Activity</string>
+    <string name="title_activity_DMV_">DMV_Activity</string>
+    <string name="title_activity_birth_cert">Birth_Cert_Activity</string>
 
     <!--  <string-array name="ssn_resource_name_array">
         <item>Get or Replace Social Security Card</item>

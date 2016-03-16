@@ -23,8 +23,8 @@ public class idNYC_Activity extends AppCompatActivity implements AdapterView.OnI
         idnyc_lvnames = getResources().getStringArray(R.array.idnyc_names);
         idnyc_lvlinks = getResources().getStringArray(R.array.idnyc_links);
         ListView idnyc_list = (ListView) findViewById(R.id.idnyc_list);
-        ArrayAdapter ssnAdapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1, idnyc_lvnames);
-        idnyc_list.setAdapter(ssnAdapter);
+        ArrayAdapter idnycAdapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1, idnyc_lvnames);
+        idnyc_list.setAdapter(idnycAdapter);
         idnyc_list.setOnItemClickListener(this);
     }
 

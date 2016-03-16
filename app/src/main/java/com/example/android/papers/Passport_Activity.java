@@ -9,7 +9,7 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
-public class Passport_Activity extends AppCompatActivity {
+public class Passport_Activity extends AppCompatActivity implements AdapterView.OnItemClickListener {
 
     private ListView passport_list;
     private String[] passport_lvnames;
@@ -19,12 +19,12 @@ public class Passport_Activity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_passport_);
-        passport_lvnames = getResources().getStringArray(R.array.passport_names_array);
+        passport_lvnames = getResources().getStringArray(R.array.passport_names);
         passport_lvlinks = getResources().getStringArray(R.array.passport_links);
-        ListView ssn_list = (ListView) findViewById(R.id.ssn_list);
-        ArrayAdapter ssnAdapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1, passport_lvnames);
-        ssn_list.setAdapter(ssnAdapter);
-        ssn_list.setOnItemClickListener(this);
+        ListView passport_list = (ListView) findViewById(R.id.passport_list);
+        ArrayAdapter passportAdapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1, passport_lvnames);
+        passport_list.setAdapter(passportAdapter);
+        passport_list.setOnItemClickListener(this);
     }
 
 

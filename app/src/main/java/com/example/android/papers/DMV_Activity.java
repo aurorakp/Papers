@@ -9,7 +9,7 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
-public class DMV_Activity extends AppCompatActivity {
+public class DMV_Activity extends AppCompatActivity implements AdapterView.OnItemClickListener {
 
     private ListView dmv_list;
     private String[] dmv_lvnames;
@@ -22,10 +22,10 @@ public class DMV_Activity extends AppCompatActivity {
         setContentView(R.layout.activity_dmv_);
         dmv_lvnames = getResources().getStringArray(R.array.dmv_names);
         dmv_lvlinks = getResources().getStringArray(R.array.dmv_links);
-        ListView idnyc_list = (ListView) findViewById(R.id.idnyc_list);
-        ArrayAdapter ssnAdapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1, dmv_lvnames);
-        idnyc_list.setAdapter(ssnAdapter);
-        idnyc_list.setOnItemClickListener(this);
+        ListView dmv_list = (ListView) findViewById(R.id.dmv_list);
+        ArrayAdapter dmvAdapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1, dmv_lvnames);
+        dmv_list.setAdapter(dmvAdapter);
+        dmv_list.setOnItemClickListener(this);
     }
 
 

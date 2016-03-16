@@ -10,11 +10,11 @@
         android:id="@+id/passport_pageheaderimg"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/passportrounded_jpeg"
+        android:src="@drawable/passportrounded"
         android:layout_alignParentTop="true" />
 
     <ListView
-        android:id="@+id/ssn_list"
+        android:id="@+id/passport_list"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/passport_pageheaderimg"
