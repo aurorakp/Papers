@@ -3,21 +3,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.android.papers.DMV_Activity">
+    tools:context="com.example.android.papers.Birth_Cert_Activity">
 
     <ImageView
-        android:id="@+id/dmv_pageheaderimg"
+        android:id="@+id/birth_cert_pageheaderimg"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/dmvbanner"
+        android:src="@drawable/nystatelogo"
         android:layout_alignParentTop="true" />
 
     <ListView
-        android:id="@+id/dmv_list"
+        android:id="@+id/birth_cert_list"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/dmv_pageheaderimg"
+        android:layout_below="@id/birth_cert_pageheaderimg"
         android:dividerHeight="1dp" />
-
 
 </RelativeLayout>
