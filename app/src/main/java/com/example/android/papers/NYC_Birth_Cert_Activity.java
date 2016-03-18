@@ -77,8 +77,8 @@ public class NYC_Birth_Cert_Activity extends AppCompatActivity {
          *  that they have checked for future reference.
          */
 
-        String header = "Documents Needed For New York City Birth Certificate Request: \n";
-        String doclist = "Document List: " + "\n";
+        String header = "Documents Needed For New York City Birth Certificate Request";
+        String doclist = "\nDocument List: " + "\n";
         if (nyc_dl) doclist = doclist + this.getString(R.string.dl) + "\n";
         if (nyc_idnyc) doclist = doclist + this.getString(R.string.idnyc) + "\n";
         if (nyc_pubben) doclist = doclist + this.getString(R.string.pubben) + "\n";
