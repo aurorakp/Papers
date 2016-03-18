@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.android.papers.NYC_Birth_Cert_Activity">
+
+    <TextView
+        style="@style/HeaderText1"
+        android:id="@+id/nyc_bc_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_weight="1"
+        android:text="@string/docs">
+
+    </TextView>
+
+    <TextView
+        style="@style/HeaderText2"
+        android:id="@+id/nyc_bc_proofid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/proofid">
+
+    </TextView>
+
+    <LinearLayout
+        android:id="@+id/linear_proofid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_below="@id/nyc_bc_proofid">
+
+        <CheckBox
+            android:id="@+id/nyc_dl"
+            style="@style/CheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onCheckboxClicked"
+            android:text="@string/dl">
+
+        </CheckBox>
+
+        <CheckBox
+            android:id="@+id/nyc_idnyc"
+            style="@style/CheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onCheckboxClicked"
+            android:text="@string/idnyc"
+            android:layout_below="@id/nyc_dl"></CheckBox>
+
+        <CheckBox
+            android:id="@+id/nyc_pubben"
+            style="@style/CheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onCheckboxClicked"
+            android:text="@string/pubben"
+            android:layout_below="@id/nyc_idnyc"></CheckBox>
+
+        <CheckBox
+            android:id="@+id/nyc_pass"
+            style="@style/CheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onCheckboxClicked"
+            android:text="@string/nyc_pp"
+            android:layout_below="@id/nyc_pubben"></CheckBox>
+
+        <CheckBox
+            android:id="@+id/nyc_nat"
+            style="@style/CheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onCheckboxClicked"
+            android:text="@string/nyc_nat"
+            android:layout_below="@id/nyc_pass"></CheckBox>
+
+        <CheckBox
+            android:id="@+id/nyc_usmil"
+            style="@style/CheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onCheckboxClicked"
+            android:text="@string/usmil"
+            android:layout_below="@id/nyc_nat"></CheckBox>
+
+        <CheckBox
+            android:id="@+id/nyc_emp"
+            style="@style/CheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onCheckboxClicked"
+            android:text="@string/nyc_emp"
+            android:layout_below="@id/nyc_usmil"></CheckBox>
+
+        <CheckBox
+            android:id="@+id/nyc_mta"
+            style="@style/CheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onCheckboxClicked"
+            android:text="@string/nyc_mta"
+            android:layout_below="@id/nyc_emp"></CheckBox>
+
+        <CheckBox
+            android:id="@+id/nyc_student"
+            style="@style/CheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onCheckboxClicked"
+            android:text="@string/nyc_student"
+            android:layout_below="@id/nyc_mta"></CheckBox>
+
+        <CheckBox
+            android:id="@+id/nyc_inmate"
+            style="@style/CheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onCheckboxClicked"
+            android:text="@string/nyc_inmate"
+            android:layout_below="@id/nyc_student"></CheckBox>
+    </LinearLayout>
+
+    <TextView
+        style="@style/HeaderText2"
+        android:id="@+id/nyc_proofadd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/proofaddress"
+        android:layout_weight="1"
+        android:layout_below="@id/linear_proofid" />
+
+    <LinearLayout
+        android:id="@+id/nyc_linearproofadd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_below="@id/nyc_proofadd">
+
+
+        <CheckBox
+            android:id="@+id/nyc_bill"
+            style="@style/CheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onCheckboxClicked"
+            android:text="@string/nyc_bill"></CheckBox>
+
+        <CheckBox
+            android:id="@+id/nyc_govlett"
+            style="@style/CheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onCheckboxClicked"
+            android:text="@string/nyc_govlett"
+            android:layout_below="@id/nyc_bill"></CheckBox>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <Button
+            style="@style/ButtonText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="emailList"
+            android:text="@string/emaildocs"
+            android:paddingBottom="20dp"
+            android:layout_centerHorizontal="true"></Button>
+    </RelativeLayout>
+</LinearLayout>

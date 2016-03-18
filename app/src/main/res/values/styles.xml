@@ -9,6 +9,18 @@
         <item name="android:windowBackground">@color/colorBackground</item>
     </style>
 
+    <style name="CheckBox"></style>
+
+    <style name="HeaderText1" parent="@android:style/TextAppearance">
+        <item name="android:textStyle">bold</item>
+        <item name="android:padding">20dp</item>
+    </style>
+
+    <style name="HeaderText2" parent="@android:style/TextAppearance">
+        <item name="android:textStyle">italic</item>
+        <item name="android:padding">16dp</item>
+    </style>
+
     <style name="ButtonText">
         <item name="android:textSize">14sp</item>
 

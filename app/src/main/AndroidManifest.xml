@@ -59,6 +59,25 @@
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.android.papers.MainActivity" />
+        </activity>
+        <activity
+            android:name=".NYState_Birth_Cert_Activity"
+            android:label="NYState_Birth_Cert_Activity"
+            android:parentActivityName=".Birth_Cert_Activity"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.android.papers.MainActivity" />
+
+        </activity>
+        <activity
+            android:name=".NYC_Birth_Cert_Activity"
+            android:label="NYC_Birth_Cert_Activity"
+            android:parentActivityName=".Birth_Cert_Activity"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.android.papers.MainActivity" />
 
         </activity>
     </application>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.android.papers.NYState_Birth_Cert_Activity">
+
+    <TextView
+        android:id="@+id/nys_bc_title"
+        style="@style/HeaderText1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:paddingTop="20dp"
+        android:text="@string/docs"></TextView>
+
+    <TextView
+        android:id="@+id/nys_bc_atleastone"
+        style="@style/HeaderText2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/proofid"></TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:orientation="vertical">
+
+        <CheckBox
+            android:id="@+id/nys_dl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onCheckboxClicked"
+            android:text="@string/dl"></CheckBox>
+
+        <CheckBox
+            android:id="@+id/nys_nondl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onCheckboxClicked"
+            android:text="@string/nondlid"></CheckBox>
+
+        <CheckBox
+            android:id="@+id/nys_usmil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onCheckboxClicked"
+            android:text="@string/usmil"></CheckBox>
+
+        <CheckBox
+            android:id="@+id/nys_pass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onCheckboxClicked"
+            android:text="@string/pp"></CheckBox>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/nys_atleasttwo"
+        style="@style/HeaderText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/nys_atleasttwo" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:orientation="vertical">
+
+        <CheckBox
+            android:id="@+id/nys_bill"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onCheckboxClicked"
+            android:text="@string/bill"></CheckBox>
+
+        <CheckBox
+            android:id="@+id/nys_govlett"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onCheckboxClicked"
+            android:text="@string/govtletter"></CheckBox>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/nys_emaildocs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:onClick="emailList"
+            android:paddingBottom="20dp"
+            android:text="@string/emaildocs" />
+    </RelativeLayout>
+</LinearLayout>

@@ -2,7 +2,6 @@ package com.example.android.papers;
 
 import android.content.Intent;
 import android.graphics.Typeface;
-import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.TypedValue;
@@ -43,12 +42,17 @@ public class Birth_Cert_Activity extends AppCompatActivity implements AdapterVie
 
     }
 
-
-    public void onItemClick(AdapterView<?> adapterView, View view, int i, long lo) {
-        if (i < birth_cert_lvlinks.length) {
-            Uri uri = Uri.parse(birth_cert_lvlinks[i]);
-            Intent intent = new Intent(Intent.ACTION_VIEW, uri);
-            startActivity(intent);
+    @Override
+    public void onItemClick(AdapterView<?> adapterView, View view, int position, long lo) {
+        switch (position) {
+            case 0:
+                Intent startApp0 = new Intent(this, NYC_Birth_Cert_Activity.class);
+                startActivity(startApp0);
+                break;
+            case 1:
+                Intent startApp1 = new Intent(this, NYState_Birth_Cert_Activity.class);
+                startActivity(startApp1);
+                break;
         }
     }
 }

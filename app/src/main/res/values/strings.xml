@@ -10,6 +10,28 @@
     <string name="title_activity_passport_">Passport_Activity</string>
     <string name="title_activity_DMV_">DMV_Activity</string>
     <string name="title_activity_birth_cert">Birth_Cert_Activity</string>
+    <string name="dl">Driver\'s License</string>
+    <string name="nondlid">State Non-Driver ID Card</string>
+    <string name="usmil">U.S. Military Photo ID</string>
+    <string name="pp">Passport</string>
+    <string name="bill">Utility or Telephone Bill</string>
+    <string name="govtletter">Letter from Government Agency (Dated Less Than 6 Months Ago)</string>
+    <string name="emaildocs">Email Document List</string>
+    <string name="idnyc">IDNYC (Municipal ID)</string>
+    <string name="pubben">Public Benefit Card</string>
+    <string name="nyc_pp">U.S. or Foreign Passport</string>
+    <string name="nyc_nat">U.S. Certificate of Naturalization</string>
+    <string name="nyc_emp">Employee Photo ID with Paystub and Verifiable Employer</string>
+    <string name="nyc_mta">MTA Reduced-Fare Metro Card</string>
+    <string name="nyc_student">Student ID with Transcript from Verified Instiution</string>
+    <string name="nyc_inmate">Inmate Photo ID with Release Papers</string>
+    <string name="nyc_bill">Utility Bills (Dated Less Than 60 Days Ago)</string>
+    <string name="nyc_govlett">Letter from Government Agency (Dated Less Than 60 Days Ago)</string>
+    <string name="proofaddress">OR Proof of Address (Need Two):</string>
+    <string name="proofid">Proof of Identity (Need One):</string>
+    <string name="docs">Documents:</string>
+    <string name="nys_atleastone">At least one of the following:</string>
+    <string name="nys_atleasttwo">OR Two of the following:</string>
 
     <!--  <string-array name="ssn_resource_name_array">
         <item>Get or Replace Social Security Card</item>
