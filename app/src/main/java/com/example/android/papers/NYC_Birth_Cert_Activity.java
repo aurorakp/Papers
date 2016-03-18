@@ -72,6 +72,10 @@ public class NYC_Birth_Cert_Activity extends AppCompatActivity {
     }
 
     public void emailList(View view) {
+        /**
+         *  Sets up an email to send to the user (or someone else) with the list of documents
+         *  that they have checked for future reference.
+         */
 
         String header = "Documents Needed For New York City Birth Certificate Request: \n";
         String doclist = "Document List: " + "\n";

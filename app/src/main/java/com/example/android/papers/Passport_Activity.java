@@ -26,6 +26,10 @@ public class Passport_Activity extends AppCompatActivity implements AdapterView.
         passport_lvnames = getResources().getStringArray(R.array.passport_names);
         passport_lvlinks = getResources().getStringArray(R.array.passport_links);
         ListView passport_list = (ListView) findViewById(R.id.passport_list);
+
+        // Set up custom ArrayAdapter to handle the ListView and make the text
+        // larger and easier to see
+
         final ArrayAdapter<String> passportAdapter = new ArrayAdapter<String>
                 (this, android.R.layout.simple_list_item_1, passport_lvnames) {
             @Override

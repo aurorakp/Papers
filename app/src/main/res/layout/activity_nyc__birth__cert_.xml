@@ -175,6 +175,7 @@
             android:onClick="emailList"
             android:text="@string/emaildocs"
             android:paddingBottom="20dp"
+            android:paddingTop="20dp"
             android:layout_centerHorizontal="true"></Button>
     </RelativeLayout>
 </LinearLayout>

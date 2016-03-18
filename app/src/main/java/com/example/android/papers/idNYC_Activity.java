@@ -27,6 +27,10 @@ public class idNYC_Activity extends AppCompatActivity implements AdapterView.OnI
         idnyc_lvnames = getResources().getStringArray(R.array.idnyc_names);
         idnyc_lvlinks = getResources().getStringArray(R.array.idnyc_links);
         ListView idnyc_list = (ListView) findViewById(R.id.idnyc_list);
+
+        // Set up custom ArrayAdapter to handle the ListView and make the text
+        // larger and easier to see
+
         final ArrayAdapter<String> idnycAdapter = new ArrayAdapter<String>
                 (this, android.R.layout.simple_list_item_1, idnyc_lvnames) {
             @Override

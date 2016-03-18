@@ -27,6 +27,10 @@ public class Birth_Cert_Activity extends AppCompatActivity implements AdapterVie
         birth_cert_lvnames = getResources().getStringArray(R.array.birth_cert_names);
         birth_cert_lvlinks = getResources().getStringArray(R.array.birth_cert_links);
         ListView birth_cert_list = (ListView) findViewById(R.id.birth_cert_list);
+
+        // Set up custom ArrayAdapter to handle the ListView and make the text
+        // larger and easier to see
+
         final ArrayAdapter<String> birthcertAdapter = new ArrayAdapter<String>
                 (this, android.R.layout.simple_list_item_1, birth_cert_lvnames) {
             @Override
@@ -45,20 +49,24 @@ public class Birth_Cert_Activity extends AppCompatActivity implements AdapterVie
 
     @Override
     public void onItemClick(AdapterView<?> adapterView, View view, int position, long lo) {
+        /**
+         * Set up custom click behavior for the ListView to determine what happens for each position
+         * when the user clicks there
+         */
         switch (position) {
             case 0:
-                Uri uri1 = Uri.parse(birth_cert_lvlinks[0]);
-                Intent intent1 = new Intent(Intent.ACTION_VIEW, uri1);
-                startActivity(intent1);
+                Uri uri0 = Uri.parse(birth_cert_lvlinks[0]);
+                Intent intent0 = new Intent(Intent.ACTION_VIEW, uri0);
+                startActivity(intent0);
                 break;
             case 1:
                 Intent startApp0 = new Intent(this, NYC_Birth_Cert_Activity.class);
                 startActivity(startApp0);
                 break;
             case 2:
-                Uri uri3 = Uri.parse(birth_cert_lvlinks[1]);
-                Intent intent3 = new Intent(Intent.ACTION_VIEW, uri3);
-                startActivity(intent3);
+                Uri uri2 = Uri.parse(birth_cert_lvlinks[1]);
+                Intent intent2 = new Intent(Intent.ACTION_VIEW, uri2);
+                startActivity(intent2);
                 break;
             case 3:
                 Intent startApp2 = new Intent(this, NYState_Birth_Cert_Activity.class);

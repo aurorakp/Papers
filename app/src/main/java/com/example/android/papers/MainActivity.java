@@ -30,29 +30,35 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    /**
+     * Called when the user clicks the Birth Certificate
+     *
+     * @param view
+     */
     public void goToBirthCert(View view) {
         Intent intent = new Intent(this, Birth_Cert_Activity.class);
         startActivity(intent);
     }
+
+    /**
+     * Called when the user clicks the Driver's License
+     *
+     * @param view
+     */
 
     public void goToDMV(View view) {
         Intent intent = new Intent(this, DMV_Activity.class);
         startActivity(intent);
     }
 
+    /**
+     * Called when the user clicks the US Passport
+     * @param view
+     */
+
+
     public void goToPassport(View view) {
         Intent intent = new Intent(this, Passport_Activity.class);
         startActivity(intent);
     }
-
-//    public void scaleBitmaps(View view) {
-//        Bitmap idNycBitmap = BitmapFactory.decodeResource(getResources(), R.drawable.idnyclogo);
-//
-//        RoundedBitmapDrawable circleDrawable = RoundedBitmapDrawableFactory.create(getResources(), idNycBitmap);
-//        circleDrawable.setCornerRadius(idNycBitmap.getWidth());
-//        ImageView idButtonView = (ImageView) view.findViewById(R.id.idnycbutton);
-//        idButtonView.setImageDrawable(circleDrawable);
-//
-//        System.out.println("Voila.. a circle");
-//    }
 }

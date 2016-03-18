@@ -27,6 +27,10 @@ public class DMV_Activity extends AppCompatActivity implements AdapterView.OnIte
         dmv_lvnames = getResources().getStringArray(R.array.dmv_names);
         dmv_lvlinks = getResources().getStringArray(R.array.dmv_links);
         ListView dmv_list = (ListView) findViewById(R.id.dmv_list);
+
+        // Set up custom ArrayAdapter to handle the ListView and make the text
+        // larger and easier to see
+
         final ArrayAdapter<String> dmvAdapter = new ArrayAdapter<String>
                 (this, android.R.layout.simple_list_item_1, dmv_lvnames) {
             @Override

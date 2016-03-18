@@ -27,6 +27,10 @@ public class SSN_Activity extends AppCompatActivity implements AdapterView.OnIte
         ssn_lvnames = getResources().getStringArray(R.array.ssn_resource_name_array);
         ssn_lvlinks = getResources().getStringArray(R.array.ssn_resource_link_array);
         ListView ssn_list = (ListView) findViewById(R.id.ssn_list);
+
+        // Set up custom ArrayAdapter to handle the ListView and make the text
+        // larger and easier to see
+
         final ArrayAdapter<String> ssnAdapter = new ArrayAdapter<String>
                 (this, android.R.layout.simple_list_item_1, ssn_lvnames) {
             @Override

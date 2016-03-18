@@ -28,6 +28,10 @@
         <item>http://dmv.ny.gov/id-card/bget-non-driver-id-card-ndid  </item>
         <item>http://dmv.ny.gov/driver-license/get-driver-license</item>
     </string-array>
+    <string-array name="dmv_nondl_info">
+        <item>Completed Application</item>
+        <item>Proof of Identity/Date of Birth</item>
+    </string-array>
     <string-array name="birth_cert_names">
         <item>New York City Births Website</item>
         <item>New York City Births Documents</item>
