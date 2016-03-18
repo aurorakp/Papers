@@ -9,8 +9,11 @@
         android:id="@+id/idnyc_pageheaderimg"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/idnyc_banner"
-        android:layout_alignParentTop="true" />
+        android:src="@drawable/idnyctransheader"
+        android:paddingBottom="20dp"
+        android:paddingTop="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
 
     <ListView
         android:id="@+id/idnyc_list"

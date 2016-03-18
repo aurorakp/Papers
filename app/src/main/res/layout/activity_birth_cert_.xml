@@ -9,14 +9,18 @@
         android:id="@+id/birth_cert_pageheaderimg"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/nystatelogo"
-        android:layout_alignParentTop="true" />
+        android:src="@drawable/birthcert"
+        android:layout_alignParentTop="true"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:layout_centerHorizontal="true" />
 
     <ListView
         android:id="@+id/birth_cert_list"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/birth_cert_pageheaderimg"
+        android:textSize="30dp"
         android:dividerHeight="1dp" />
 
 </RelativeLayout>

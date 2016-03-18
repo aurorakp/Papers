@@ -1,13 +1,17 @@
 package com.example.android.papers;
 
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.TypedValue;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.TextView;
 
 public class Passport_Activity extends AppCompatActivity implements AdapterView.OnItemClickListener {
 
@@ -22,7 +26,17 @@ public class Passport_Activity extends AppCompatActivity implements AdapterView.
         passport_lvnames = getResources().getStringArray(R.array.passport_names);
         passport_lvlinks = getResources().getStringArray(R.array.passport_links);
         ListView passport_list = (ListView) findViewById(R.id.passport_list);
-        ArrayAdapter passportAdapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1, passport_lvnames);
+        final ArrayAdapter<String> passportAdapter = new ArrayAdapter<String>
+                (this, android.R.layout.simple_list_item_1, passport_lvnames) {
+            @Override
+            public View getView(int position, View convertView, ViewGroup parent) {
+                View view = super.getView(position, convertView, parent);
+                TextView tv = (TextView) view.findViewById(android.R.id.text1);
+                tv.setTextSize(TypedValue.COMPLEX_UNIT_DIP, 20);
+                tv.setTypeface(Typeface.DEFAULT_BOLD);
+                return view;
+            }
+        };
         passport_list.setAdapter(passportAdapter);
         passport_list.setOnItemClickListener(this);
     }

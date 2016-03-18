@@ -10,7 +10,10 @@
         android:id="@+id/passport_pageheaderimg"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/passportrounded"
+        android:src="@drawable/passport_transparent"
+        android:adjustViewBounds="true"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
         android:layout_alignParentTop="true" />
 
     <ListView

@@ -1,13 +1,17 @@
 package com.example.android.papers;
 
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.TypedValue;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.TextView;
 
 public class DMV_Activity extends AppCompatActivity implements AdapterView.OnItemClickListener {
 
@@ -23,7 +27,17 @@ public class DMV_Activity extends AppCompatActivity implements AdapterView.OnIte
         dmv_lvnames = getResources().getStringArray(R.array.dmv_names);
         dmv_lvlinks = getResources().getStringArray(R.array.dmv_links);
         ListView dmv_list = (ListView) findViewById(R.id.dmv_list);
-        ArrayAdapter dmvAdapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1, dmv_lvnames);
+        final ArrayAdapter<String> dmvAdapter = new ArrayAdapter<String>
+                (this, android.R.layout.simple_list_item_1, dmv_lvnames) {
+            @Override
+            public View getView(int position, View convertView, ViewGroup parent) {
+                View view = super.getView(position, convertView, parent);
+                TextView tv = (TextView) view.findViewById(android.R.id.text1);
+                tv.setTextSize(TypedValue.COMPLEX_UNIT_DIP, 20);
+                tv.setTypeface(Typeface.DEFAULT_BOLD);
+                return view;
+            }
+        };
         dmv_list.setAdapter(dmvAdapter);
         dmv_list.setOnItemClickListener(this);
     }
