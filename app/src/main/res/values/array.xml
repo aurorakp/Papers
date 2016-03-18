@@ -29,8 +29,10 @@
         <item>http://dmv.ny.gov/driver-license/get-driver-license</item>
     </string-array>
     <string-array name="birth_cert_names">
-        <item>New York City Births</item>
+        <item>New York City Births Website</item>
+        <item>New York City Births Documents</item>
         <item>New York State (Not in NYC) Births</item>
+        <item>New York State Documents</item>
     </string-array>
     <string-array name="birth_cert_links">
         <item>http://www1.nyc.gov/site/doh/services/birth-certificates.page</item>
